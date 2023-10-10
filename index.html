@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Salesboard</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="body-dark">
+        <div class="container">
+            
+            <div class="toggle-wrapper ">
+                <p class="toggle-p"><i class="fas fa-sun"></i></p>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p class="toggle-p"><i class="fa-solid fa-moon"></i></p>
+            </div> 
+            
+            <div class="content-wrapper">
+                <div class="introduction">
+                    <h1>Salesboard 🔔</h1>
+                    <img src="images/nick.jpg" alt="Nick, the sales person" class="img-light">
+                </div>
+                
+                <div class="products-wrapper">
+                    <button class="btn star-btn btn-light" id="product-star-btn"></button>
+                    <button class="btn fire-btn btn-light" id="product-fire-btn"></button>
+                </div>
+                
+                <div class="dashboards live-sales">
+                    <h3 class="live-titles sales-el" id="sales-title">Live Sales</h3>
+                    <p class="live-dashboard-p light-p" id="sales-p"></p>
+                </div>
+                
+                <div class="dashboards live-achivements">
+                    <h3 class="live-titles achivements-el" id="achivement-title">Live Achievements</h3>
+                    <p class="live-dashboard-p light-p" id="achivement-p"></p>
+                </div>
+                
+                <div class="totals-wrapper">
+                    <div class="total">
+                        <h3 class="live-titles achivements-el margin" id="achivement-title">Total Revenue</h3>
+                        <p class="total live-dashboard-p light-p margin" id="revenue-p"></p>
+                    </div>
+                    
+                    <div class="total">
+                        <h3 class="live-titles achivements-el" id="achivement-title">Total Commision</h3>
+                        <p class="total live-dashboard-p light-p" id="commision-p"></p>
+                    </div>
+                </div>
+                    
+                <div class="reset">
+                    <button class="btn reset-btn btn-light" id="reset-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/3aec8f0f3e.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

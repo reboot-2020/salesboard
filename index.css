@@ -1,0 +1,266 @@
+/*
+COLOR PALETTE
+
+BLACK: #201A23
+WHITE: #FBFBFB
+DARK: #44354A
+COLOR: #9E4770
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #201A23;
+    color: #FBFBFB;
+}
+
+
+/* toggle part */
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #9E4770;
+    color: white;
+    margin: 0;
+}
+
+.toggle-p {
+    display: inline;
+}
+
+
+/* Toggle CSS - copied somewhere from google */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 27px;
+  margin: 5px 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #201A23;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Light-dark toggle from google ends here */
+
+
+
+
+
+
+
+
+
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 600px;    
+    padding: 30px 10px;
+}
+
+/* Introductory */
+h1 {
+    font-size: 33px;
+    margin-top: 0px;
+}
+
+img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.img-light {
+    border: 8px solid #44354A;    
+}
+
+.img-dark {
+    border: 8px solid #201A23;
+}
+
+/* Product buttons */
+.products-wrapper {
+    margin: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.btn {
+    flex: 1;
+    display: inline-block;
+    margin: 2px 5px;
+    max-width: 120px;
+    padding: 10px 40px;
+    font-size: 30px;
+    border: none;
+    border-radius: 7px;
+}
+
+.btn-light {
+    background-color: #9E4770;    
+}
+
+.btn-dark {
+    background-color: #4f2438;    /* #44354A */    
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #6f324e;    
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background-color: #9E4770;    
+}
+
+
+/* Live dashboards (sales & achivements) */
+.dashboards {
+    margin-top: 25px;
+}
+
+.live-sales {
+    margin-bottom: 40px;
+}
+
+.live-titles {
+    margin: 0;
+}
+
+.live-dashboard-p {
+    margin: 10px auto;
+    padding: 15px 20px;
+    width: 80%;
+    max-width: 500px;
+    height: 25px;
+    font-size: 22px;
+    text-align: left;
+    letter-spacing: -3px;
+    border-radius: 50px;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;   
+}
+
+.body-light,
+.light-p {
+    background-color: #44354A;
+}
+
+.body-dark,
+.dark-p {
+    background-color: #201A23;    
+}
+
+
+/* Totals */
+.totals-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 35px;
+    gap: 25px;
+}
+
+.total {
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+/* Reset */
+.reset {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+.reset-btn {
+    flex-grow: 1;
+    /* margin-top: 10px; */
+    /* padding: 10px 40px; */
+    max-width: 90%;
+    /* font-size: 30px; */
+    /* border: none; */
+    /* border-radius: 10px; */
+    font-family:inherit;
+    color: white;
+}
+
+
+
+
+
+
+
+/*
+.total {
+    flex-grow: 1;
+    height: 25px;
+    background-color: #44354A;
+    font-size: 22px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+*/
